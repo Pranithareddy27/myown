@@ -1,0 +1,39 @@
+	<body ng-app="app">
+	<div ng-controller="customerscontrol">
+		<h1>{{msg}}</h1>
+	
+	<form ng-submit="saveCustomer()">
+		 <div class="springform" align="left">
+            <div class="form-group">
+            
+                   
+            		   <label for="fname">FirstName :</label>
+                            <input type="text" class="form-control" id="ipFirstName" ng-model="customer.firstName" /><br /> 
+				       <label for="lname">LastName :</label>
+			                <input type="text" class="form-control" id="ipLastName" ng-model="customer.lastName" /><br />
+			<button  type="submit" class="btn btn-primary btn-md" >Save Customer</button>
+			</div>
+			</div>
+		</form>
+		
+		<form id="shipping">
+		<div class="springform1" align="left">
+            <div class="form-group">
+            
+                   
+            		   <label for="city">City :</label>
+                            <input type="text" class="form-control" id="ipCity" ng-model="shippingAddresses.city" /><br /> 
+				       <label for="state">State :</label>
+			                <input type="text" class="form-control" id="ipState" ng-model="shippingAddresses.state" /><br />
+			            <label for="pincode">Pincode :</label>
+			                <input type="text" class="form-control" id="ippin" ng-model="shippingAddresses.pinCode" /><br />     
+			                	                
+			<button  type="button" class="btn btn-primary btn-md" ng-click="addEntry()">Add</button>
+			</div>
+			</div>
+		
+		
+		
+		</form>
+	</div>
+	</body>
